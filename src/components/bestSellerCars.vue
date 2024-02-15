@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "sliderSection",
+  name: "bestSellerCars",
   components: {},
   data() {
     return {};
@@ -47,12 +47,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 h1 {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   width: fit-content;
   margin: 30px auto;
+  font-weight: bold;
 }
 .main {
-  margin: 150px auto;
+  margin: 200px auto;
 }
 .cars-container {
   background-color: #000;

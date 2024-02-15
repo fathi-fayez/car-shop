@@ -2,15 +2,17 @@
   <headerPage></headerPage>
   <div class="home container">
     <cars-page :carsdetailes="myCars"></cars-page>
-    <sliderSection :carsdetailes="myCars"></sliderSection>
+    <bestSellerCars :carsdetailes="myCars"></bestSellerCars>
   </div>
+  <panner-section></panner-section>
 </template>
 
 <script>
 import CarsPage from "../components/carsPage.vue";
 import carsData from "../data/carsDetails.json";
 import headerPage from "../components/header.vue";
-import sliderSection from "../components/slider.vue";
+import bestSellerCars from "../components/bestSellerCars.vue";
+import pannerSection from "../components/pannerSection.vue";
 
 export default {
   name: "HomeView",
@@ -19,6 +21,6 @@ export default {
       myCars: carsData,
     };
   },
-  components: { CarsPage, headerPage, sliderSection },
+  components: { CarsPage, headerPage, bestSellerCars, pannerSection },
 };
 </script>

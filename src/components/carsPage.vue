@@ -35,9 +35,10 @@ export default {
 
 <style lang="scss" scoped>
 h1 {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   width: fit-content;
   margin: 30px auto;
+  font-weight: bold;
 }
 .each-car {
   padding: 10px;
