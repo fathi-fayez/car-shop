@@ -1,7 +1,7 @@
 <template>
-  <div class="row">
+  <div class="row m-5">
     <div class="col-8">
-      <div>
+      <div class="mainImageContainer">
         <img
           class="mainImage rounded d-block mx-auto"
           :src="getSelectedCar.mainImage"
@@ -10,33 +10,20 @@
       </div>
     </div>
     <div class="col-4">
-      <h2>{{ getSelectedCar.name }}</h2>
-      <h2>{{ getSelectedCar.model }}</h2>
-      <h2>{{ getSelectedCar.price }}</h2>
+      <h2>Name: {{ getSelectedCar.name }}</h2>
+      <h2>Model: {{ getSelectedCar.model }}</h2>
+      <h2>Price: {{ getSelectedCar.price }}</h2>
       <h2>Year: {{ getSelectedCar.year }}</h2>
       <p>{{ getSelectedCar.description }}</p>
+      <button type="button" class="btn btn-primary mt-4 w-50">Buy now</button>
     </div>
-    <div class="col-12 text-center mt-5 d-flex flex-row">
-      <!-- <img v-for="(image, x) in getSelectedCar.images" :key="x" :src="image" /> -->
+    <div class="col-10 text-center mt-5 d-flex flex-row">
       <img
-        class="rounded d-block mx-auto"
-        :src="getSelectedCar.mainImage"
-        alt=""
-      />
-      <img
-        class="rounded d-block mx-auto"
-        :src="getSelectedCar.mainImage"
-        alt=""
-      />
-      <img
-        class="rounded d-block mx-auto"
-        :src="getSelectedCar.mainImage"
-        alt=""
-      />
-      <img
-        class="rounded d-block mx-auto"
-        :src="getSelectedCar.mainImage"
-        alt=""
+        class="details-image rounded d-block mx-auto"
+        v-for="(image, x) in getSelectedCar.images"
+        :key="x"
+        :src="image"
+        @click="changeMainImage(image)"
       />
     </div>
   </div>
@@ -54,6 +41,11 @@ export default {
     };
   },
   components: {},
+  methods: {
+    changeMainImage(image) {
+      this.getSelectedCar.mainImage = image;
+    },
+  },
   computed: {
     getSelectedCar() {
       const selectedCar = this.myCars.find((item) => item.id == this.carId);
@@ -65,5 +57,17 @@ export default {
 <style lang="scss" scoped>
 .mainImage {
   width: 600px;
+}
+.details-image {
+  width: 200px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.details-image:hover {
+  transform: scale(1.1);
+}
+.mainImageContainer img {
+  width: 600px;
+  height: 400px;
 }
 </style>

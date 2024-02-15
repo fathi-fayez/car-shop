@@ -29,7 +29,7 @@
       <div class="col-lg-3">
         <h4>Contact Info</h4>
         <p>+2010 2271 6283</p>
-        <p>509 724 580 - issued in Egypt on 03/11/2019, expires 08/11/2023</p>
+        <p>509 724 580 - issued in Egypt on 03/11/2023, expires 08/11/2026</p>
       </div>
       <hr />
     </div>

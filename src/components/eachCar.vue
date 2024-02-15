@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-evenly">
+  <div class="row m-5 justify-content-evenly">
     <div v-for="car in getSelectedType" :key="car.id" class="each-car col-4">
       <img class="rounded d-block mx-auto" :src="car.mainImage" alt="" />
       <h3 class="text-center">{{ car.name }}</h3>

@@ -32,7 +32,7 @@ export default {
   margin-top: 150px;
   li {
     list-style: none;
-    border-bottom: 2px solid #b80f0f;
+    transition: 0.5s;
     a {
       text-decoration: none;
       color: #fff;
@@ -47,6 +47,9 @@ export default {
       align-items: center;
       justify-content: center;
     }
+  }
+  li:hover {
+    transform: scale(1.1);
   }
 }
 </style>

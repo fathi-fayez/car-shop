@@ -1,11 +1,8 @@
 <template>
   <headerPage></headerPage>
   <div class="home container">
-    <div class="row">
-      <div class="col">
-        <cars-page :carsdetailes="myCars"></cars-page>
-      </div>
-    </div>
+    <cars-page :carsdetailes="myCars"></cars-page>
+    <sliderSection :carsdetailes="myCars"></sliderSection>
   </div>
 </template>
 
@@ -13,7 +10,7 @@
 import CarsPage from "../components/carsPage.vue";
 import carsData from "../data/carsDetails.json";
 import headerPage from "../components/header.vue";
-// @ is an alias to /src
+import sliderSection from "../components/slider.vue";
 
 export default {
   name: "HomeView",
@@ -22,6 +19,6 @@ export default {
       myCars: carsData,
     };
   },
-  components: { CarsPage, headerPage },
+  components: { CarsPage, headerPage, sliderSection },
 };
 </script>
