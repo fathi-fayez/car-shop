@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="text-center">All Cars</h1>
     <div class="row justify-content-evenly">
       <div v-for="car in carsdetailes" :key="car.id" class="each-car col-4">

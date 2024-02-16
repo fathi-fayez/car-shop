@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main container">
     <h1 class="text-center">Best Seller Cars</h1>
     <div class="row cars-container justify-content-evenly">
       <div v-for="car in bestSellerCars" :key="car.id" class="each-car col-4">
@@ -53,7 +53,7 @@ h1 {
   font-weight: bold;
 }
 .main {
-  margin: 200px auto;
+  margin: 200px auto 250px;
 }
 .cars-container {
   background-color: #000;
