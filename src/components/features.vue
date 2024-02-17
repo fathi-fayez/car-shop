@@ -2,7 +2,7 @@
   <div class="main">
     <h2 class="text-center">Why Choose Us?</h2>
     <div class="row p-5">
-      <div class="col-sm-10 col-mid-3 text-center">
+      <div class="col-10 col-md-3 text-center">
         <i class="fa-solid fa-money-check-dollar"></i>
         <h3>Special Financing Offers</h3>
         <p>
@@ -10,7 +10,7 @@
           to save you money.
         </p>
       </div>
-      <div class="col-sm-10 col-mid-3 text-center">
+      <div class="col-10 col-md-3 text-center">
         <i class="fa-solid fa-shield-halved"></i>
         <h3>Trusted Car Dealership</h3>
         <p>
@@ -18,7 +18,7 @@
           to save you money.
         </p>
       </div>
-      <div class="col-sm-10 col-mid-3 text-center">
+      <div class="col-10 col-md-3 text-center">
         <i class="fa-solid fa-hand-holding-dollar"></i>
         <h3>Transparent Pricing</h3>
         <p>
@@ -26,7 +26,7 @@
           to save you money.
         </p>
       </div>
-      <div class="col-sm-10 col-mid-3 text-center">
+      <div class="col-10 col-md-3 text-center">
         <i class="fa-solid fa-taxi"></i>
         <h3>Expert Car Service</h3>
         <p>
