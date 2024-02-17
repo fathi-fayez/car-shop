@@ -39,6 +39,15 @@ export default {
     position: relative;
     top: 200px;
     animation: popup 1s 0.5s both;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 100px 50px;
+    h2 {
+      font-size: 25px;
+    }
   }
 }
 @keyframes popup {

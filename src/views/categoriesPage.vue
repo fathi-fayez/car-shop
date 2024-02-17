@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="sidebar-nav d-flex">
+    <ul class="sidebar-nav d-flex flex-wrap">
       <li v-for="(type, x) in carTypes" :key="x">
         <router-link
           class="rounded"

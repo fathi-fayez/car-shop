@@ -2,7 +2,11 @@
   <div class="main container">
     <h1 class="text-center">Best Seller Cars</h1>
     <div class="row cars-container justify-content-evenly">
-      <div v-for="car in bestSellerCars" :key="car.id" class="each-car col-4">
+      <div
+        v-for="car in bestSellerCars"
+        :key="car.id"
+        class="each-car col-sm-6 col-lg-4"
+      >
         <img class="rounded d-block mx-auto" :src="car.mainImage" alt="" />
         <h3 class="text-center">{{ car.name }}</h3>
         <div class="d-flex justify-content-between">

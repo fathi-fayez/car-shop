@@ -1,6 +1,6 @@
 <template>
   <div class="row m-4">
-    <div class="col-8">
+    <div class="col-sm-10 col-lg-8">
       <div class="mainImageContainer">
         <img
           class="mainImage rounded d-block mx-auto"
@@ -9,7 +9,7 @@
         />
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-sm-10 col-lg-4 mx-auto">
       <h2>Name: {{ getSelectedCar.name }}</h2>
       <h2>Model: {{ getSelectedCar.model }}</h2>
       <h2>Price: {{ getSelectedCar.price }}</h2>
@@ -17,7 +17,7 @@
       <p>{{ getSelectedCar.description }}</p>
       <button type="button" class="btn btn-primary mt-4 w-50">Buy now</button>
     </div>
-    <div class="col-10 text-center mt-4 d-flex flex-row">
+    <div class="col-sm-10 text-center mt-4 d-flex flex-row">
       <img
         class="details-image rounded d-block mx-auto"
         v-for="(image, x) in getSelectedCar.images"
@@ -55,8 +55,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.mainImage {
+.mainImageContainer img {
   width: 600px;
+  height: 400px;
+  max-width: 100%;
 }
 .details-image {
   width: 200px;
@@ -66,8 +68,10 @@ export default {
 .details-image:hover {
   transform: scale(1.1);
 }
-.mainImageContainer img {
-  width: 600px;
-  height: 400px;
+
+@media (max-width: 767px) {
+  .details-image {
+    width: 75px;
+  }
 }
 </style>

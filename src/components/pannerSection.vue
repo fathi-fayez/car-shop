@@ -1,12 +1,12 @@
 <template>
   <div class="main row">
-    <div class="col-6">
+    <div class="image-container col-sm-12 col-md-6">
       <img
         src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/h10.jpg"
         alt=""
       />
     </div>
-    <div class="text-container col-6 text-light">
+    <div class="text-container col-sm-12 col-md-6 text-light">
       <h2>Online, in-person, everywhere</h2>
       <p>
         Choose from thousands of vehicles from multiple brands and buy online
@@ -29,13 +29,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.image-container {
+  padding: 0;
+}
 .text-container {
   background-color: #050b20;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 150px;
+  padding: 50px;
   h2 {
     font-weight: bold;
     font-size: 40px;
@@ -45,5 +48,9 @@ export default {
     align-self: flex-start;
     margin-top: 20px;
   }
+}
+img {
+  max-width: 100%;
+  padding: 0;
 }
 </style>

@@ -2,7 +2,7 @@
   <section class="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="contact-info col-md-6">
           <h2>Contact Us</h2>
           <p>
             Feel free to get in touch with us for any inquiries or questions.
@@ -81,5 +81,13 @@ export default {
 <style scoped>
 .contact-section {
   padding: 100px;
+}
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 20px;
+  }
+  .contact-info {
+    margin-bottom: 30px;
+  }
 }
 </style>

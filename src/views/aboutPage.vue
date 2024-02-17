@@ -62,5 +62,6 @@ h2 {
 }
 img {
   width: 600px;
+  max-width: 100%;
 }
 </style>

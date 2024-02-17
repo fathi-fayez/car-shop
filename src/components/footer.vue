@@ -1,12 +1,12 @@
 <template>
   <div class="footer py-5">
     <div class="row text-start">
-      <div class="col-lg-3">
+      <div class="col-6 col-lg-3">
         <img class="mb-4" src="../assets/images/store1.png" alt="" />
         <img src="../assets/images/store2.png" alt="" />
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-6 col-lg-3">
         <h4>Information</h4>
         <ul class="footer-list">
           <li><a href="">About us</a></li>
@@ -16,7 +16,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-6 col-lg-3">
         <h4>User Area</h4>
         <ul class="footer-list">
           <li><a href="">My account</a></li>
@@ -26,7 +26,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-6 col-lg-3">
         <h4>Contact Info</h4>
         <p>+2010 2271 6283</p>
         <p>509 724 580 - issued in Egypt on 03/11/2023, expires 08/11/2026</p>
@@ -52,9 +52,9 @@ export default {
   background-color: black;
   padding: 50px 100px;
   margin-top: 100px;
-}
-h4 {
-  color: blue;
+  h4 {
+    color: blue;
+  }
 }
 a {
   text-decoration: none !important;
@@ -62,5 +62,10 @@ a {
 }
 .copyright-text {
   background-color: blue;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 0;
+  }
 }
 </style>
