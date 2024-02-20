@@ -6,8 +6,10 @@
           class="rounded"
           :to="{ name: 'eachCar', params: { carType: type.carName } }"
           exact
-          >{{ type.carName }}</router-link
         >
+          <img :src="type.background" :alt="type.carName" />
+        </router-link>
+        <h5 class="text-center">{{ type.carName }}</h5>
       </li>
     </ul>
   </div>
@@ -37,15 +39,16 @@ export default {
       text-decoration: none;
       color: #fff;
       font-weight: 700;
-      padding: 10px;
-      display: block;
       width: 200px;
       height: 200px;
+      padding: 10px;
       margin: 20px;
-      background-color: #4c4f60;
+      border: 4px solid black;
       display: flex;
       align-items: center;
-      justify-content: center;
+      img {
+        max-width: 100%;
+      }
     }
   }
   li:hover {

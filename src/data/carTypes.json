@@ -1,6 +1,18 @@
 [
-  { "carName": "Toyota" },
-  { "carName": "Mercedes" },
-  { "carName": "Honda" },
-  { "carName": "Chevolate" }
+  {
+    "carName": "Toyota",
+    "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Toyota_EU.svg/1200px-Toyota_EU.svg.png"
+  },
+  {
+    "carName": "Mercedes",
+    "background": "https://seeklogo.com/images/M/Mercedes-Benz-logo-E47583B444-seeklogo.com.png"
+  },
+  {
+    "carName": "Honda",
+    "background": "https://1000logos.net/wp-content/uploads/2018/03/Honda-Logo-2000.png"
+  },
+  {
+    "carName": "Chevrolet",
+    "background": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chevrolet_simple_logo.png"
+  }
 ]

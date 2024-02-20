@@ -57,8 +57,7 @@ h2 {
 
 .our-Mission,
 .our-Vision {
-  border: 2px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 img {
   width: 600px;
