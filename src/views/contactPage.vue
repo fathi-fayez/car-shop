@@ -2,7 +2,7 @@
   <section class="contact-section">
     <div class="container">
       <div class="row">
-        <div class="contact-info col-md-6">
+        <div class="contact-form col-md-6">
           <h2>Contact Us</h2>
           <p>
             Feel free to get in touch with us for any inquiries or questions.
@@ -40,8 +40,8 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-        <div class="col-md-6">
-          <h2>Contact Information</h2>
+        <div class="contact-info col-md-6">
+          <h2 class="my-5">Contact Information</h2>
           <p>You can also reach us through the following:</p>
           <ul class="list-unstyled">
             <li>Email: fathifayez155@.com</li>
@@ -82,11 +82,18 @@ export default {
 .contact-section {
   padding: 100px;
 }
+.contact-info {
+  border: 3px solid black;
+  text-align: center;
+}
+li {
+  padding: 15px 0;
+}
 @media (max-width: 767px) {
   .contact-section {
     padding: 20px;
   }
-  .contact-info {
+  .contact-form {
     margin-bottom: 30px;
   }
 }

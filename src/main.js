@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "normalize.css";
 import "./scss/main.scss";
+// import vue-carousel;
 
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";

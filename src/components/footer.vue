@@ -49,19 +49,16 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  background-color: black;
+  background-color: #9e9e9e;
   padding: 50px 100px;
   margin-top: 100px;
   h4 {
-    color: blue;
+    color: black;
   }
 }
 a {
   text-decoration: none !important;
   color: white !important;
-}
-.copyright-text {
-  background-color: blue;
 }
 @media (max-width: 767px) {
   .footer {
